@@ -41,6 +41,21 @@
             <link name="${name}_motor_double_link">
               <xacro:call macro="${name}_motor_double_link_inertial" />
 
+              <visual>
+                <origin xyz="-0.008 -0.02 -0.038" rpy="0 0 0" />
+                <geometry>
+                  <mesh filename="package://talos_description/meshes/gripper/pad.stl" scale="0.001 0.001 0.001"/>
+                </geometry>
+              <material name="Orange"/>
+              </visual>
+
+              <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                  <mesh filename="package://talos_description/meshes/gripper/pad.stl" scale="0.001 0.001 0.001"/>
+                </geometry>
+              </collision>
+
               <!-- <visual>
                 <origin xyz="0 0 0" rpy="0 0 0" />
                 <geometry>
@@ -101,6 +116,21 @@
 
             <link name="${name}_fingertip_1_link">
               <xacro:call macro="${name}_fingertip_1_link_inertial" />
+
+              <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                  <mesh filename="package://talos_description/meshes/gripper/slope_10deg.stl" scale="0.0001 0.0001 0.0001"/>
+                </geometry>
+              <material name="Orange"/>
+              </visual>
+
+              <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                  <mesh filename="package://talos_description/meshes/gripper/slope_10deg.stl" scale="0.0001 0.0001 0.0001"/>
+                </geometry>
+              </collision>
 
               <!-- <visual>
                 <origin xyz="0 0 0" rpy="0 0 0" />
