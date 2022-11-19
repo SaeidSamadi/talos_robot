@@ -16,7 +16,7 @@
               <visual>
                 <origin xyz="0 0 0" rpy="0 0 0" />
                 <geometry>
-                  <mesh filename="package://talos_description/meshes/gripper/base_link.STL" scale="1 1 1"/>
+                  <mesh filename="package://talos_description/meshes/gripper/base_link_pad.stl" scale="1 1 1"/>
                 </geometry>
                 <material name="DarkGrey"/>
               </visual>
